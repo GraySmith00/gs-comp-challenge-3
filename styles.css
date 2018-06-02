@@ -16,7 +16,12 @@ body {
 .sidebar {
   flex: 1;
   min-width: 10rem;
-  background-color: purple;
+  background-color: #374050;
+  color: #9da7b8;
+}
+
+.sidebar-ul {
+  list-style-type: none;
 }
 
 main {
@@ -48,9 +53,9 @@ main {
 }
 
 .container {
-  height: 100%;
   width: 90%;
   border: 1px solid black;
+  height: 100%;
 }
 
 /* =======================================================================
@@ -61,7 +66,7 @@ Title SECTION
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #edf2f6;
+  background-color: #fff;
 }
 
 .title-header {
@@ -112,6 +117,7 @@ DATA SECTION
   align-items: center;
   padding: 4rem 0 4rem 0;
   background-color: cadetblue;
+  background-color: steelblue;
 }
 
 .data-container {
@@ -199,27 +205,45 @@ DESCRIPTON SECTION
   flex-direction: column;
   align-items: center;
   padding: 4rem 0 4rem 0;
-  background-color: burlywood;
+  background-color: #edf2f6;
+  height: 45rem;
 }
 
 .description-container {
   display: flex;
-  padding: 0 0 2rem 0;
 }
 
 .description-table {
   flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #ffffff;
 }
 
-.description-fields {
+.description-field {
   padding: 0 0 0 1.5em;
   display: grid;
   grid-template-columns: 1fr 3fr;
+  grid-gap: 0.8em;
+  align-items: center;
 }
 
-.job-description {
+.job-description-header {
   padding: 0 0 0 1.5em;
   background-color: #717e93;
+}
+
+.description-edit-button {
+  width: 5em;
+}
+
+.description-property {
+  font-size: 0.9em;
+}
+
+.description-text {
+  font-size: 0.8em;
 }
 
 .social-links {
@@ -242,7 +266,7 @@ DESCRIPTON SECTION
 .social-button {
   outline: none;
   border: none;
-  padding: 0.8rem 0 0.8rem 0;
+  padding: 1em 0 1em 0;
   width: 100%;
   border-radius: 2px;
   color: white;
@@ -265,11 +289,15 @@ DESCRIPTON SECTION
 }
 
 .social-widgets {
-  flex: 2;
+  flex: 3;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 2rem 0 2rem 0;
+  margin-bottom: 1em;
+}
+
+.widget-text {
+  font-size: 0.6em;
 }
 
 .copy-link-container {

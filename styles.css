@@ -133,6 +133,30 @@ Title SECTION
   margin-left: 3em;
 }
 
+.title-links {
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+}
+
+.btn-title {
+  /* padding: 0.6em 0.6em 0.6em 0.6em; */
+  width: 2.5em;
+  height: 2.5em;
+  border: 2px solid gray;
+  display: inline-block;
+  vertical-align: middle;
+  color: gray;
+  background-color: inherit;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.btn-open {
+  width: auto;
+}
+
 .title-nav {
   display: flex;
   align-items: flex-end;
@@ -274,7 +298,7 @@ DESCRIPTON SECTION
 }
 
 .job-description-header {
-  padding: 0 0 0 1.5em;
+  padding: 1em 0 1em 1.5em;
   background-color: #717e93;
 }
 

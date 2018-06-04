@@ -206,11 +206,11 @@ DESCRIPTON SECTION
   align-items: center;
   padding: 4rem 0 4rem 0;
   background-color: #edf2f6;
-  height: 45rem;
 }
 
 .description-container {
   display: flex;
+  min-height: 40rem;
 }
 
 .description-table {

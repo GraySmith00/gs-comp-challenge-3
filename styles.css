@@ -35,10 +35,22 @@ main {
   border-bottom: 1.5px solid #f2f2f5;
   font-size: 1.8em;
   color: #9da4af;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:hover .fa-caret-left {
+  background-color: #45a4f3;
+  color: #f2f2f2;
 }
 
 .btn-hamburger {
   border-right: 1.5px solid #f2f2f5;
+}
+
+.fa-caret-left {
+  margin-right: 0.1em;
+  color: #47a5f3;
 }
 
 .search {

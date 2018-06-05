@@ -106,6 +106,7 @@ Sidebar Section
 
 .sidebar-ul li {
   padding: 0.8em 0 0.8em 2em;
+  position: relative;
 }
 
 .sidebar-ul li:hover {
@@ -138,6 +139,74 @@ Sidebar Section
 .categories {
   display: flex;
   justify-content: center;
+}
+
+.category-wrapper {
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+
+.li-category {
+  padding-left: 4em !important;
+}
+
+/* Hide the browser's default checkbox */
+.category-wrapper input {
+  position: absolute;
+  top: 25%;
+  left: 2em;
+  width: 1.2em;
+  height: 1.2em;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 10;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 25%;
+  left: 2em;
+  height: 1.2em;
+  width: 1.2em;
+  background-color: #fad74a;
+}
+
+.checkmark-design {
+  background-color: #51aff8;
+}
+
+.checkmark-executive {
+  background-color: #d73763;
+}
+
+.checkmark-home {
+  background-color: #4aa78c;
+}
+
+.checkmark:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.category-wrapper input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.category-wrapper .checkmark:after {
+  left: 7px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid #000;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 /* =======================================================================
@@ -403,7 +472,7 @@ DESCRIPTON SECTION
   min-height: 40rem;
 }
 
-.article-wrapper {
+.description-article-wrapper {
   flex: 3;
   padding: 0 1.5em 0 1.5em;
   background-color: #ffffff;
@@ -585,6 +654,7 @@ hr {
   background-color: #66b8bf;
   color: #fff;
   border-radius: 0 0.3em 0.3em 0;
+  cursor: pointer;
 }
 
 .email-input {

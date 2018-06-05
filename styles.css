@@ -253,6 +253,10 @@ Title SECTION
   margin-top: 3em;
 }
 
+.title-copy {
+  padding-right: 1em;
+}
+
 .title-header h1 {
   margin: 0;
   padding: 0;
@@ -426,7 +430,7 @@ DATA SECTION
 .data-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
 }
 
 .progress-circle-container {
@@ -455,7 +459,7 @@ DATA SECTION
 
 .bar-graph img {
   z-index: 99;
-  height: 14rem;
+  height: 12rem;
 }
 
 figcaption {
@@ -465,6 +469,10 @@ figcaption {
   border-radius: 3em;
   border: 2px solid #e0e5eb;
 }
+
+/* .caption-circles {
+  margin-top: 6em;
+} */
 
 /* =======================================================================
 PROGRESS CIRCLE SVG
@@ -606,11 +614,11 @@ hr {
 }
 
 .social-links {
-  flex: 1;
+  flex: 1.3;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 3rem;
+  margin-left: 2.5rem;
 }
 
 .social-buttons {
@@ -667,7 +675,7 @@ hr {
 
 .job-link-widget,
 .share-widget {
-  padding-bottom: 2em;
+  padding-bottom: 1.5em;
   border-bottom: 2px solid #737e91;
 }
 
@@ -687,7 +695,11 @@ hr {
   height: 35px;
   border: none;
   border-radius: 0.3em 0 0 0.3em;
-  font-size: 0.6em;
+  font-size: 0.85em;
+}
+
+.copy-link-input:placeholder-shown {
+  text-overflow: ellipsis;
 }
 
 .copy-link-button {
@@ -766,7 +778,6 @@ hr {
     width: 100%;
     min-width: 0;
   }
-
   .circle-chart {
     height: 8rem;
   }

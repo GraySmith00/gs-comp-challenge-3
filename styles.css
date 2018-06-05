@@ -15,7 +15,6 @@ body {
 
 main {
   flex: 5;
-  background-color: green;
   /* overflow: scroll; */
 }
 
@@ -23,7 +22,6 @@ main {
   display: flex;
   margin: 0;
   height: 5rem;
-  background-color: aquamarine;
 }
 
 .btn {
@@ -31,14 +29,24 @@ main {
   height: 100%;
   width: 5rem;
   background-color: inherit;
-  border: 1px solid gray;
+  border: none;
+  border-top: 1.5px solid #f2f2f5;
+  border-left: 1.5px solid #f2f2f5;
+  border-bottom: 1.5px solid #f2f2f5;
+  font-size: 1.8em;
+  color: #9da4af;
+}
+
+.btn-hamburger {
+  border-right: 1.5px solid #f2f2f5;
 }
 
 .search {
   flex: 1;
   background-color: inherit;
   border: none;
-  border: 1px solid gray;
+  border-top: 1.5px solid #f2f2f5;
+  border-bottom: 1.5px solid #f2f2f5;
 }
 
 .container {
@@ -154,6 +162,8 @@ Title SECTION
 }
 
 .location a {
+  text-decoration: none;
+  color: #78c1f6;
 }
 
 .title-links {
@@ -176,15 +186,39 @@ Title SECTION
   border-radius: 50%;
 }
 
+.btn-title:hover {
+  transform: scale(1.1);
+  transition: ease-in-out 0.2s;
+  border: 2px solid #78c1f6;
+  color: #78c1f6;
+}
+
+.btn-title:hover i {
+  color: #78c1f6;
+}
+
 .btn-open {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 6rem;
   border-radius: 5rem;
+}
+
+.green-dot {
+  height: 0.8em;
+  width: 0.8em;
+  margin-right: 0.2em;
+  transform: translateY(1px);
+  background-color: #99c354;
+  border-radius: 50%;
 }
 
 .title-nav {
   display: flex;
   align-items: flex-end;
   margin-top: 2rem;
+  width: 80%;
 }
 
 .title-nav ul {
@@ -195,8 +229,17 @@ Title SECTION
   list-style-type: none;
 }
 
-.title-nav li {
-  color: black;
+.title-nav a {
+  color: #a0a8b4;
+  text-decoration: none;
+  font-weight: 700;
+  padding-bottom: 0.65em;
+}
+
+.title-nav a:hover,
+.active a {
+  color: #262626;
+  border-bottom: 4px solid #78c1f6;
 }
 /* =======================================================================
 DIVIDER SECTION
@@ -224,6 +267,12 @@ DIVIDER SECTION
 .divider-container i {
   font-size: 2em;
   color: #737e91;
+  cursor: pointer;
+}
+
+.divider-container i:hover {
+  transform: scale(1.1);
+  transition: ease-in 0.2s;
 }
 /* =======================================================================
 DATA SECTION
@@ -268,7 +317,6 @@ DATA SECTION
 }
 
 .bar-graph img {
-  /* background: url('./public/images/taco-bargraph.png'); */
   z-index: 99;
   height: 10rem;
 }

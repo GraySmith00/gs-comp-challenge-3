@@ -112,6 +112,7 @@ Sidebar Section
   background-color: #303948;
   color: #fff;
   cursor: pointer;
+  transition: ease-in 0.2s;
 }
 
 .profile {
@@ -176,6 +177,11 @@ Title SECTION
 .location a {
   text-decoration: none;
   color: #78c1f6;
+}
+
+.location a:hover {
+  transform: scale(1.1);
+  transition: ease-in 0.2s;
 }
 
 .title-links {
@@ -455,6 +461,7 @@ hr {
   background-color: #7e8ba4;
   border: none;
   color: #f2f2f2;
+  cursor: pointer;
 }
 
 .description-edit-button:hover {
@@ -509,6 +516,12 @@ hr {
   color: white;
   font-size: 0.8rem;
   cursor: pointer;
+}
+
+.social-button:hover {
+  transform: scale(1.05);
+  transition: ease-in 0.2s;
+  border: 2px solid #86c1f1;
 }
 
 .social-button i {

@@ -20,6 +20,7 @@ main {
 
 .header {
   display: flex;
+  position: relative;
   margin: 0;
   height: 5rem;
 }
@@ -53,12 +54,25 @@ main {
   color: #47a5f3;
 }
 
+.fa-search {
+  position: absolute;
+  top: 36%;
+  left: 3.7em;
+  font-size: 1.5em;
+  color: #a9afb8;
+}
+
 .search {
   flex: 1;
+  text-indent: 2.5em;
   background-color: inherit;
   border: none;
   border-top: 1.5px solid #f2f2f5;
   border-bottom: 1.5px solid #f2f2f5;
+}
+
+::placeholder {
+  color: #a9afb8;
 }
 
 .container {
@@ -72,7 +86,7 @@ Sidebar Section
 ======================================================================= */
 .sidebar {
   flex: 1;
-  min-width: 10rem;
+  min-width: 12rem;
   background-color: #374050;
   color: #9da7b8;
 }
@@ -105,8 +119,11 @@ Sidebar Section
 }
 
 .sidebar-ul li {
-  padding: 0.8em 0 0.8em 2em;
+  padding-left: 2em;
   position: relative;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  align-items: center;
 }
 
 .sidebar-ul li:hover {
@@ -148,7 +165,7 @@ Sidebar Section
 }
 
 .li-category {
-  padding-left: 4em !important;
+  padding-left: 2em;
 }
 
 /* Hide the browser's default checkbox */
@@ -230,6 +247,7 @@ Title SECTION
 .title-header h1 {
   margin: 0;
   padding: 0;
+  color: #7c7e87;
 }
 
 .location {
@@ -263,10 +281,10 @@ Title SECTION
 .btn-title {
   width: 2.5em;
   height: 2.5em;
-  border: 2px solid gray;
+  border: 2px solid #dee4e9;
   display: inline-block;
   vertical-align: middle;
-  color: gray;
+  color: #9ca3ae;
   background-color: inherit;
   text-align: center;
   cursor: pointer;
@@ -346,14 +364,14 @@ DIVIDER SECTION
 
 .divider-1,
 .divider-2 {
-  background-color: #737e91;
+  background-color: #dbe0e6;
   height: 2px;
   width: 47%;
 }
 
 .divider-container i {
   font-size: 2em;
-  color: #737e91;
+  color: #dbe0e6;
   cursor: pointer;
 }
 
@@ -405,7 +423,7 @@ DATA SECTION
 
 .bar-graph img {
   z-index: 99;
-  height: 10rem;
+  height: 14rem;
 }
 
 figcaption {
@@ -642,10 +660,6 @@ hr {
   font-size: 0.6em;
 }
 
-.copy-link-input:placeholder {
-  color: #737e91;
-}
-
 .copy-link-button {
   flex: 2;
   margin: 0;
@@ -659,4 +673,18 @@ hr {
 
 .email-input {
   border-radius: 0.3em 0.3em 0.3em 0.3em;
+}
+
+@media only screen and (max-width: 1340px) {
+  .data-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .progress-circle-container {
+    width: 60%;
+    min-width: 500px;
+  }
+  .bar-graph-container {
+    margin-top: 4rem;
+  }
 }

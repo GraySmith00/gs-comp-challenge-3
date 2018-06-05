@@ -116,8 +116,10 @@
         <button class="btn btn-hamburger" aria-label="view sidebar">
             <i class="fas fa-caret-left"></i><i class="fas fa-bars"></i>
         </button>
-        <i class="fas fa-search"></i>
-        <input type="text" class="search" aria-label="add user" placeholder="Search for a job, task or resume">
+        <div class="search-container">
+          <i class="fas fa-search"></i>
+          <input type="text" class="search" aria-label="add user" placeholder="Search for a job, task or resume">
+        </div>
         <button class="btn btn-add-person">
           <i class="fas fa-user-plus"></i>
         </button>
@@ -128,6 +130,10 @@
           <i class="fas fa-th"></i>
         </button>
       </header><!-- header -->
+      <section class="media-query-search">
+        <i class="fas fa-search"></i>
+        <input type="text" class="search" aria-label="add user" placeholder="Search for a job, task or resume">
+      </section><!-- media-query-search -->
       <section class="title">
         <div class="container title-container">
           <header class="title-header">
@@ -165,6 +171,18 @@
               <li><a href="#" aria-label="broadcast link">BROADCAST</a></li>
               <li><a href="#" aria-label="notifications link">NOTIFICATIONS</a></li>
             </ul>
+          </nav>
+          <nav class="title-custom-select">
+            <select>
+              <option value="0">Job Data</option>
+              <option value="1">Summary</option>
+              <option value="2">Applicats</option>
+              <option value="3">Job Board</option>
+              <option value="4">Interviews</option>
+              <option value="5">Activity</option>
+              <option value="6">Broadcast</option>
+              <option value="7">Notifications</option>
+            </select>
           </nav>
         </div>
       </section><!-- title -->
@@ -231,7 +249,7 @@
         </div>
       </section><!-- divider -->
       <section class="description">
-        <div class="container description-container">
+        <div class="description-container container">
     
           <div class="description-article-wrapper">
             <div class="header-color">

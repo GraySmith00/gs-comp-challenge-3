@@ -499,14 +499,20 @@ hr {
 }
 
 .social-button {
+  display: flex;
+  justify-content: flex-start;
   outline: none;
   border: none;
-  padding: 1em 0 1em 0;
+  padding: 1.2em 1em 1.2em 1em;
   width: 100%;
   border-radius: 2px;
   color: white;
   font-size: 0.8rem;
   cursor: pointer;
+}
+
+.social-button i {
+  margin: 0 23% 0 2%;
 }
 
 .facebook-button {

@@ -134,10 +134,12 @@ Title SECTION
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 3em;
 }
 
 .title-header h1 {
-  margin-bottom: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .location {
@@ -182,7 +184,7 @@ Title SECTION
 .title-nav {
   display: flex;
   align-items: flex-end;
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 
 .title-nav ul {
@@ -196,7 +198,33 @@ Title SECTION
 .title-nav li {
   color: black;
 }
+/* =======================================================================
+DIVIDER SECTION
+======================================================================= */
+.divider {
+  display: flex;
+  justify-content: center;
+  height: 2rem;
+  background-color: #edf2f6;
+}
 
+.divider-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.divider-1,
+.divider-2 {
+  background-color: #737e91;
+  height: 2px;
+  width: 47%;
+}
+
+.divider-container i {
+  font-size: 2em;
+  color: #737e91;
+}
 /* =======================================================================
 DATA SECTION
 ======================================================================= */
@@ -206,8 +234,7 @@ DATA SECTION
   flex-direction: column;
   align-items: center;
   padding: 4rem 0 4rem 0;
-  background-color: cadetblue;
-  background-color: steelblue;
+  background-color: #edf2f6;
 }
 
 .data-container {
@@ -220,11 +247,14 @@ DATA SECTION
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 50%;
 }
 
 .progress-circles {
   display: flex;
+  justify-content: space-between;
   margin: 0;
+  width: 100%;
 }
 
 .bar-graph-container {
@@ -240,11 +270,15 @@ DATA SECTION
 .bar-graph img {
   /* background: url('./public/images/taco-bargraph.png'); */
   z-index: 99;
-  height: 8rem;
+  height: 10rem;
 }
 
 figcaption {
   margin-top: 2rem;
+  padding: 0.6em 1em 0.6em 1em;
+  background-color: #fafafc;
+  border-radius: 3em;
+  border: 2px solid #e0e5eb;
 }
 
 /* =======================================================================
@@ -252,7 +286,7 @@ PROGRESS CIRCLE SVG
 ======================================================================= */
 
 .circle-chart {
-  height: 8rem;
+  height: 10rem;
 }
 
 .circle-chart__circle {
@@ -304,13 +338,13 @@ DESCRIPTON SECTION
 }
 
 .article-wrapper {
+  flex: 3;
   padding: 0 1.5em 0 1.5em;
   background-color: #ffffff;
   position: relative;
 }
 
 .description-table {
-  flex: 3;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -420,12 +454,10 @@ hr {
 }
 
 .twitter-button {
-  /* margin-top: 1rem; */
   background-color: #47acea;
 }
 
 .linkedin-button {
-  /* margin-top: 1rem; */
   background-color: #4e70bb;
 }
 
@@ -434,7 +466,13 @@ hr {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-bottom: 1em;
+  color: #737e91;
+}
+
+.job-link-widget,
+.share-widget {
+  padding-bottom: 2em;
+  border-bottom: 2px solid #737e91;
 }
 
 .widget-text {
@@ -444,4 +482,32 @@ hr {
 .copy-link-container {
   display: flex;
   align-items: center;
+}
+
+.copy-link-input {
+  flex: 8;
+  margin: 0;
+  padding-left: 1.5em;
+  height: 35px;
+  border: none;
+  border-radius: 0.3em 0 0 0.3em;
+  font-size: 0.6em;
+}
+
+.copy-link-input:placeholder {
+  color: #737e91;
+}
+
+.copy-link-button {
+  flex: 2;
+  margin: 0;
+  height: 35px;
+  border: none;
+  background-color: #66b8bf;
+  color: #fff;
+  border-radius: 0 0.3em 0.3em 0;
+}
+
+.email-input {
+  border-radius: 0.3em 0.3em 0.3em 0.3em;
 }

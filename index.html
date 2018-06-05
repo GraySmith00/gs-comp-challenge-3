@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
     crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet"> -->
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="styles.css">
   <title>Job Postings</title>
@@ -84,9 +84,9 @@
         <button class="btn btn-apps">
 
         </button>
-      </header>
+      </header><!-- header -->
       <section class="title">
-        <div class="container">
+        <div class="container title-container">
           <header class="title-header">
             <div class="title-copy">
               <h1>Customer Service Representative</h1>
@@ -111,17 +111,17 @@
           </header>
           <nav class="title-nav">
             <ul>
-              <li>Summary</li>
-              <li>Applicants</li>
-              <li>Job Board</li>
-              <li>Interviews</li>
-              <li>Activity</li>
-              <li>Broadcast</li>
-              <li>Notifications</li>
+              <li>SUMMARY</li>
+              <li>APPLICANTS</li>
+              <li>JOB BOARD</li>
+              <li>INTERVIEWS</li>
+              <li>ACTIVITY</li>
+              <li>BROADCAST</li>
+              <li>NOTIFICATIONS</li>
             </ul>
           </nav>
         </div>
-      </section>
+      </section><!-- title -->
       <section class="data">
         <div class="container data-container">
           <div class="progress-circle-container">
@@ -173,11 +173,22 @@
 
         </div><!-- container data-container -->
       </section><!-- data -->
+      <section class="divider">
+        <div class="container divider-container">
+          <div class="divider-1">
+
+          </div>
+          <i class="fas fa-chevron-circle-up"></i>
+          <div class="divider-2">
+            
+          </div>
+        </div>
+      </section>
       <section class="description">
         <div class="container description-container">
+    
           <div class="article-wrapper">
             <div class="header-color">
-            
             </div>
             <article class="description-table">
               <div class="description-field job-description-header">
@@ -259,8 +270,7 @@
                   Cray austin vice unicorn brooklyn
                 </p>
               </div><!-- approved-salary -->
-            </article><!-- descripton-table -->
-            
+            </article><!-- descripton-table -->   
           </div><!-- article-wrapper -->
 
           <aside class="social-links">
@@ -284,9 +294,7 @@
                   This widget is where you can copy the link below and then paste it to visit the job website.
                 </p>
                 <div class="copy-link-container">
-                  <div class="copy-link">
-                    http://loremipsum.dol/sit amet...
-                  </div>
+                  <input class="copy-link-input" placeholder="http://loremipsum.dol/sit amet...">
                   <button class="copy-link-button" aria-role="copy job link">
                     Copy
                   </button>
@@ -300,9 +308,7 @@
                   This widget embeds the buttons for sharing the job for submitting a resume on your website.
                 </p>
                 <div class="copy-link-container">
-                  <div class="copy-link">
-                    http://loremipsum.dol/sit amet...
-                  </div>
+                  <input class="copy-link-input" placeholder="http://loremipsum.dol/sit amet...">
                   <button class="copy-link-button" aria-role="copy job link">
                     Copy
                   </button>
@@ -316,9 +322,7 @@
                   You can automatically upload multiple resumes to this job by emailing the address below.
                 </p>
                 <div class="copy-link-container">
-                  <div class="copy-link">
-                    tomtizzy@gmail.com
-                  </div>
+                  <input class="email-input copy-link-input" placeholder="tomtizzy@gmail.com">                                  
                 </div><!-- copy-link-container -->
               </article>
             </div>

@@ -6,28 +6,28 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
+  background-color: #eef2f6;
 }
 
 .page-container {
   display: flex;
-  /* height: 100vh; */
 }
 
 main {
   flex: 5;
-  /* overflow: scroll; */
 }
 
 .header {
   display: flex;
   margin: 0;
-  height: 5rem;
+  height: 5.5rem;
+  background-color: #fff;
 }
 
 .btn {
   margin: 0;
   height: 100%;
-  width: 5rem;
+  width: 5.5rem;
   background-color: inherit;
   border: none;
   border-top: 1.5px solid #f2f2f5;
@@ -56,7 +56,7 @@ main {
 .fa-search {
   position: absolute;
   top: 36%;
-  left: 0.5em;
+  left: 0.7em;
   font-size: 1.5em;
   color: #a9afb8;
 }
@@ -69,7 +69,7 @@ main {
 .search {
   height: 100%;
   width: 100%;
-  text-indent: 2.5em;
+  text-indent: 3.2em;
   border: none;
   border-top: 1.5px solid #f2f2f5;
   border-bottom: 1.5px solid #f2f2f5;
@@ -78,6 +78,7 @@ main {
 
 .media-query-search {
   display: none;
+  background-color: #fff;
 }
 
 ::placeholder {
@@ -86,7 +87,6 @@ main {
 
 .container {
   width: 90%;
-  /* border: 1px solid black; */
   height: 100%;
 }
 
@@ -94,8 +94,7 @@ main {
 Sidebar Section
 ======================================================================= */
 .sidebar {
-  flex: 1;
-  min-width: 12rem;
+  width: 13.8rem;
   background-color: #374050;
   color: #9da7b8;
 }
@@ -450,7 +449,7 @@ DATA SECTION
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 50%;
+  width: 55%;
 }
 
 .progress-circles {
@@ -472,7 +471,7 @@ DATA SECTION
 
 .bar-graph img {
   z-index: 99;
-  height: 12rem;
+  height: 13rem;
 }
 
 figcaption {
@@ -492,7 +491,7 @@ PROGRESS CIRCLE SVG
 ======================================================================= */
 
 .circle-chart {
-  height: 10rem;
+  height: 11rem;
 }
 
 .circle-chart__circle {
@@ -692,11 +691,17 @@ hr {
   border-bottom: 2px solid #737e91;
 }
 
+.widget-title {
+  margin: 1em 0 0 0;
+}
+
 .widget-text {
+  margin-top: 1.4em;
   font-size: 0.7em;
 }
 
 .copy-link-container {
+  margin-top: 1.4em;
   display: flex;
   align-items: center;
 }
@@ -731,13 +736,16 @@ hr {
 }
 
 @media only screen and (max-width: 1340px) {
+  .title-nav {
+    width: 90%;
+  }
   .data-container {
     flex-direction: column;
     align-items: center;
   }
   .progress-circle-container {
     width: 60%;
-    min-width: 500px;
+    min-width: 546px;
   }
   .bar-graph-container {
     margin-top: 4rem;
@@ -750,6 +758,9 @@ hr {
   }
   .social-links {
     flex: 2;
+  }
+  .title-nav a {
+    padding-bottom: 1.2em;
   }
 }
 

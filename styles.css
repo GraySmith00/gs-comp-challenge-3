@@ -765,17 +765,14 @@ hr {
 }
 
 @media only screen and (max-width: 925px) {
+  .sidebar {
+    display: none;
+  }
   .title-nav {
     display: none;
   }
   .title-custom-select {
     display: block;
-  }
-}
-
-@media only screen and (max-width: 890px) {
-  .sidebar {
-    display: none;
   }
 }
 

@@ -19,29 +19,39 @@
         <img src="./public/images/profileCrop.png" alt="Gray Smith profile picture" class="profile-picture">
         <h4 class="profile-name">Gray Smith</h4>
       </header>
-      <nav class="main-nav">
+      <nav class="main-nav" role="nav">
         <div class="nav-container">
           <h4>Main</h4>
           <ul class="sidebar-ul">
             <li>
-              <i class="fas fa-home"></i>
-              <p>HOME</p>
+              <a href="#" aria-label="home">
+                <i class="fas fa-home"></i>
+                <p>HOME</p>
+              </a>
+            </li>
+            <li >
+              <a href="#" aria-label="jobs">
+                <i class="fas fa-briefcase"></i>
+                <p>JOBS</p>
+              </a>
             </li>
             <li>
-              <i class="fas fa-briefcase"></i>
-              <p>JOBS</p>
+              <a href="#" aria-label="resumes">
+                <i class="fas fa-file-alt"></i>
+                <p>RESUMES</p>
+              </a>
             </li>
             <li>
-              <i class="fas fa-file-alt"></i>
-              <p>RESUMES</p>
+              <a href="#" aria-label="tasks">
+                <i class="fas fa-clipboard-list"></i>
+                <p>TASKS</p>
+              </a>
             </li>
             <li>
-              <i class="fas fa-clipboard-list"></i>
-              <p>TASKS</p>
-            </li>
-            <li>
-              <i class="far fa-calendar-alt"></i>
-              <p>CALENDAR</p>
+              <a href="#" aria-label="calendar">
+                <i class="far fa-calendar-alt"></i>
+                <p>CALENDAR</p>
+              </a>
             </li>
           </ul>
         </div><!-- nav-container -->
@@ -51,24 +61,34 @@
           <h4>Admin</h4>
           <ul class="sidebar-ul">
             <li>
-              <i class="fas fa-user-friends"></i>
-              <p>USERS</p>
+              <a href="#" aria-label="users">
+                <i class="fas fa-user-friends"></i>
+                <p>USERS</p>
+              </a>
+            </li>
+            <li >
+              <a href="#" aria-label="locations">
+                <i class="fas fa-map-marker"></i>
+                <p>LOCATIONS</p>
+              </a>
             </li>
             <li>
-              <i class="fas fa-map-marker"></i>
-              <p>LOCATIONS</p>
+              <a href="#" aria-label="workflows">
+                <i class="fas fa-sitemap"></i>
+                <p>WORKFLOWS</p>
+              </a>
             </li>
             <li>
-              <i class="fas fa-sitemap"></i>
-              <p>WORKFLOWS</p>
+              <a href="#" aria-label="job boards">
+                <i class="fas fa-clipboard"></i>
+                <p>JOB BOARDS</p>
+              </a>
             </li>
             <li>
-              <i class="fas fa-clipboard"></i>
-              <p>JOB BOARDS</p>
-            </li>
-            <li>
-              <i class="fab fa-connectdevelop"></i>
-              <p>SOCIAL</p>
+              <a href="#" aria-label="social">
+                <i class="fab fa-connectdevelop"></i>
+                <p>SOCIAL</p>
+              </a>
             </li>
           </ul>
         </div><!-- nav-container -->
@@ -120,7 +140,7 @@
           <i class="fas fa-search"></i>
           <input type="text" class="search" aria-label="add user" placeholder="Search for a job, task or resume">
         </div>
-        <button class="btn btn-add-person">
+        <button class="btn btn-add-person" aria-label="add user">
           <i class="fas fa-user-plus"></i>
         </button>
         <button class="btn btn-save" aria-label="save">
@@ -142,34 +162,34 @@
               <div class="location">
                 <p><i class="fas fa-map-marker"></i> San Francisco, CA</p>
                 <p>&#183;</p>
-                <a href="#" aria-label="preview post link">Preview this post</a>
+                <a href="#" aria-label="preview post">Preview this post</a>
               </div>
             </div>
             <div class="title-links">
-              <button class="btn-title btn-open" aria-label="open button">
+              <button class="btn-title btn-open" aria-label="open">
                 <div class="green-dot"></div>
                 OPEN
               </button>
-              <button class="btn-title" aria-label="bookmark button">
+              <button class="btn-title" aria-label="bookmark">
                 <i class="far fa-bookmark"></i>
               </button>
-              <button class="btn-title" aria-label="edit button">
+              <button class="btn-title" aria-label="edit">
                 <i class="fas fa-pencil-alt"></i>
               </button>
-              <button class="btn-title" aria-label="remove button">
+              <button class="btn-title" aria-label="remove">
                 <i class="fas fa-trash-alt"></i>
               </button>
             </div>
           </header>
           <nav class="title-nav">
             <ul>
-              <li class="active"><a href="#" aria-label="summary link">SUMMARY</a></li>
-              <li><a href="#" aria-label="applicants link">APPLICANTS</a></li>
-              <li><a href="#" aria-label="job board link">JOB BOARD</a></li>
-              <li><a href="#" aria-label="interviews link">INTERVIEWS</a></li>
-              <li><a href="#" aria-label="activity link">ACTIVITY</a></li>
-              <li><a href="#" aria-label="broadcast link">BROADCAST</a></li>
-              <li><a href="#" aria-label="notifications link">NOTIFICATIONS</a></li>
+              <li class="active"><a href="#" aria-label="summary">SUMMARY</a></li>
+              <li><a href="#" aria-label="applicants">APPLICANTS</a></li>
+              <li><a href="#" aria-label="job board">JOB BOARD</a></li>
+              <li><a href="#" aria-label="interviews">INTERVIEWS</a></li>
+              <li><a href="#" aria-label="activity">ACTIVITY</a></li>
+              <li><a href="#" aria-label="broadcast">BROADCAST</a></li>
+              <li><a href="#" aria-label="notifications">NOTIFICATIONS</a></li>
             </ul>
           </nav>
           <nav class="title-custom-select">
@@ -250,7 +270,6 @@
       </section><!-- divider -->
       <section class="description">
         <div class="description-container container">
-    
           <div class="description-article-wrapper">
             <div class="header-color">
             </div>
@@ -336,16 +355,15 @@
               </div><!-- approved-salary -->
             </article><!-- descripton-table -->   
           </div><!-- article-wrapper -->
-
           <aside class="social-links">
             <div class="social-buttons">
-              <button class="social-button facebook-button" aria-label="facebook button">
+              <button class="social-button facebook-button" aria-label="facebook">
                 <i class="fab fa-facebook-f"></i>Post to Facebook
               </button>
-              <button class="social-button twitter-button" aria-label="twitter button">
+              <button class="social-button twitter-button" aria-label="twitter">
                 <i class="fab fa-twitter"></i>Tweet this Job
               </button>
-              <button class="social-button linkedin-button" aria-label="linked in button">
+              <button class="social-button linkedin-button" aria-label="linked in">
                 <i class="fab fa-linkedin"></i>Post to Linkedin
               </button>
             </div><!-- social-buttons -->
@@ -358,8 +376,8 @@
                   This widget is where you can copy the link below and then paste it to visit the job website.
                 </p>
                 <div class="copy-link-container">
-                  <input class="copy-link-input" placeholder="Deep v mustache everyday carry raclette">
-                  <button class="copy-link-button" aria-label="copy job link">
+                  <input class="copy-link-input" placeholder="Deep v mustache everyday carry raclette" aria-label="copy the link to this job">
+                  <button class="copy-link-button" aria-label="copy job">
                     Copy
                   </button>
                 </div><!-- copy-link-container -->
@@ -372,8 +390,8 @@
                   This widget embeds the buttons for sharing the job for submitting a resume on your website.
                 </p>
                 <div class="copy-link-container">
-                  <input class="copy-link-input" placeholder="Green juice portland poutine yr live-edge">
-                  <button class="copy-link-button" aria-label="copy job link">
+                  <input class="copy-link-input" placeholder="Green juice portland poutine yr live-edge" aria-label="embed this job on your website">
+                  <button class="copy-link-button" aria-label="copy job">
                     Copy
                   </button>
                 </div><!-- copy-link-container -->

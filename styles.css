@@ -129,10 +129,22 @@ Sidebar Section
 
 .sidebar-ul li {
   padding-left: 2em;
+}
+
+.li-category {
+  padding-left: 2em;
   position: relative;
   display: grid;
   grid-template-columns: 1fr 4fr;
   align-items: center;
+}
+
+.sidebar-ul a {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
 }
 
 .sidebar-ul li:hover {
